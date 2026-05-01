@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <link rel="icon" type="image/gif" href="public/CITLogo.gif" />
+                        <title>
+                            Interactive English Website
+                        </title>
+        </head>
+        <body>
+            <!-- Адаптивный навбар -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        EnglishSite
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Lessons
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    About
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Контент -->
+            <div class="container mt-5">
+                <h1>
+                    Welcome to Interactive English!
+                </h1>
+                <p class="lead">
+                    Learn English with our adaptive, interactive tools.
+                </p>
+                <!-- Интерактивный компонент: кнопка с модальным окном -->
+                <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#lessonModal">
+                    Start a Lesson
+                </button>
+            </div>
+            <!-- Модальное окно Bootstrap (интерактивный элемент) -->
+            <div class="modal fade" id="lessonModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title">
+                                Lesson 1: Greetings
+                            </h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal">
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Select the correct answer: "Hello, how ___ you?"
+                            </p>
+                            <button class="btn btn-outline-primary">
+                                is
+                            </button>
+                            <button class="btn btn-outline-primary">
+                                are
+                            </button>
+                            <button class="btn btn-outline-primary">
+                                am
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
