@@ -1,10 +1,417 @@
+﻿/* ===== Переменные цветов ===== */
+:root {
+    --primary: #1a73e8;
+    --primary-dark: #1557b0;
+    --accent: #34a853;
+    --accent-light: #e8f5e9;
+    --bg-light: #f8f9fa;
+    --text-muted-custom: #6c757d;
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --card-hover-shadow: 0 8px 32px rgba(26, 115, 232, 0.18);
+    --border-radius: 12px;
+}
+
+/* ===== Общие стили ===== */
 body {
-    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212529;
+    background-color: #fff;
 }
 
-.lead {
-    font-size: 1.25rem;
-    color: #6c757d;
+/* ===== Navbar ===== */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
-/* Здесь можно писать любые свои стили */
+.navbar-brand span {
+    color: #ffd700;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navbar-dark .nav-link:hover {
+    color: #ffd700 !important;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary) 0%, #0d47a1 60%, #1565c0 100%);
+    padding: 100px 0 80px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+    width: 350px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 50%;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero-section p.lead {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border-radius: 50px;
+    padding: 6px 18px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(4px);
+}
+
+/* ===== Section titles ===== */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 2px;
+    margin: 10px auto 0;
+}
+
+.section-title.text-start::after {
+    margin-left: 0;
+}
+
+/* ===== Feature Cards ===== */
+.feature-card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* ===== Lesson Cards ===== */
+.lesson-card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.lesson-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.lesson-card .card-header {
+    border-bottom: none;
+    padding: 1.2rem 1.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.lesson-card .card-body {
+    padding: 1.5rem;
+}
+
+.lesson-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== Vocabulary Flashcard ===== */
+.flashcard-wrapper {
+    perspective: 1200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.flashcard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    border-radius: var(--border-radius);
+}
+
+.flashcard-wrapper:hover .flashcard,
+.flashcard-wrapper.flipped .flashcard {
+    transform: rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+}
+
+.flashcard-front {
+    background: #fff;
+    border: 2px solid #e3f2fd;
+}
+
+.flashcard-back {
+    background: var(--primary);
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.flashcard-front .word {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.flashcard-front .hint {
+    font-size: 0.85rem;
+    color: var(--text-muted-custom);
+    margin-top: 0.5rem;
+}
+
+.flashcard-back .translation {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.flashcard-back .example {
+    font-size: 0.85rem;
+    opacity: 0.85;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* ===== Grammar Section ===== */
+.grammar-card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+}
+
+.grammar-card .card-header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-bottom: none;
+    padding: 1rem 1.5rem;
+}
+
+.grammar-table th {
+    background-color: #e3f2fd;
+    color: var(--primary-dark);
+    font-weight: 600;
+    border: none;
+}
+
+.grammar-table td {
+    vertical-align: middle;
+    border-color: #f0f0f0;
+}
+
+.grammar-table tr:hover {
+    background-color: #f0f7ff;
+}
+
+/* ===== Progress Section ===== */
+.stats-card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.stats-label {
+    font-size: 0.9rem;
+    color: var(--text-muted-custom);
+    font-weight: 500;
+}
+
+/* ===== Quiz Section ===== */
+.quiz-option {
+    width: 100%;
+    text-align: left;
+    padding: 0.85rem 1.2rem;
+    border-radius: 8px;
+    border: 2px solid #dee2e6;
+    background: #fff;
+    font-size: 1rem;
+    transition: border-color 0.2s, background 0.2s;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.quiz-option:hover {
+    border-color: var(--primary);
+    background: #e8f0fe;
+}
+
+.quiz-option.correct {
+    border-color: var(--accent);
+    background: var(--accent-light);
+    color: #1b5e20;
+    font-weight: 600;
+}
+
+.quiz-option.wrong {
+    border-color: #e53935;
+    background: #ffebee;
+    color: #b71c1c;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #0d1b2a;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+footer .footer-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-brand {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.footer-brand span {
+    color: #ffd700;
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ===== Scroll to Top ===== */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(26, 115, 232, 0.4);
+    transition: background 0.2s, transform 0.2s;
+    z-index: 999;
+}
+
+#scrollTopBtn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+#scrollTopBtn.visible {
+    display: flex;
+}
+
+/* ===== Адаптив ===== */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section {
+        padding: 70px 0 50px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .stats-number {
+        font-size: 2rem;
+    }
+}
