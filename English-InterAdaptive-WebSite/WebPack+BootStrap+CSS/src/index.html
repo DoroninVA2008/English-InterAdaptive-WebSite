@@ -9,43 +9,299 @@
     <body>
         <nav class="navbar">
             <div class="container">
-                <a href="#" class="navbar-brand">
+                <a class="navbar-brand" href="#hero-section">
                     🏛️ EnglishSite
                 </a>
                 <div class="nav-links">
-                    <a href="about">
-                        About
-                    </a>
-                    <a href="his">
-                        History
-                    </a>
-                    <a href="skill">
-                        Skills
-                    </a>
-                    <a href="timeline">
-                        Хронология
-                    </a>
-                    <a href="gallery">
-                        Галерея
-                    </a>
+                    <a href="#about-section">About</a>
+                    <a href="#history-section">History</a>
+                    <a href="#skills-section">Skills</a>
+                    <a href="#timeline-section">Timeline</a>
+                    <a href="#gallery-section">Gallery</a>
                 </div>
             </div>
         </nav>
-        <section class="hero">
+
+        <section class="hero" id="hero-section">
             <div class="container">
                 <h1>
-                    My first 
-                    <span>
-                       Solo-Project
-                    </span>
+                    My First
+                    <span>Solo Project</span>
                 </h1>
                 <p>
-                    Adaptive lessons, grammar tables, vocabulary flashcards and live quizzes — all in one place. Start from zero or level up your skills. 
+                    An adaptive English learning platform built almost entirely by one developer — proof that a single person, with enough drive, can deliver a full team's vision.
                 </p>
-                <a href="about" id="ab">
-                    ↓
+                <a id="starts" class="btn btn-primary btn-sm">
+                    Explore the Project ➞
                 </a>
             </div>
         </section>
+
+        <section class="py-5 bg-light" id="features">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Why Choose Us?</h2>
+                    <p class="text-muted mt-3">Everything you need to learn English effectively</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card feature-card p-4">
+                            <div class="feature-icon bg-primary bg-opacity-10">&#129504;</div>
+                            <h5 class="fw-bold">Adaptive Learning</h5>
+                            <p class="text-muted mb-0">The system adjusts difficulty based on your progress and automatically tracks your weak spots.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card p-4">
+                            <div class="feature-icon bg-success bg-opacity-10">&#9997;&#65039;</div>
+                            <h5 class="fw-bold">Interactive Quizzes</h5>
+                            <p class="text-muted mb-0">Test your knowledge with multiple-choice and fill-in-the-blank questions with instant feedback.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card p-4">
+                            <div class="feature-icon bg-warning bg-opacity-10">&#128218;</div>
+                            <h5 class="fw-bold">Grammar Guide</h5>
+                            <p class="text-muted mb-0">Clear, structured tables with examples &mdash; from Present Simple to Conditionals and Modal Verbs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" id="about-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h2 class="section-title text-start">About the Project</h2>
+                        <p class="text-muted mt-4">
+                            <strong>English InterAdaptive</strong> is a web-based English learning platform designed to grow with each learner. Rather than following a fixed curriculum, it adapts its content and difficulty to reflect how you actually perform.
+                        </p>
+                        <p class="text-muted">
+                            The project began as a team assignment but evolved into a solo endeavor &mdash; a challenge that ultimately shaped every architectural decision and design choice found throughout the site.
+                        </p>
+                        <div class="d-flex gap-4 mt-4">
+                            <div class="text-center">
+                                <div class="stat-number">1</div>
+                                <div class="text-muted small">Developer</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="stat-number">3+</div>
+                                <div class="text-muted small">Months</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="stat-number">6</div>
+                                <div class="text-muted small">Skill Areas</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-visual">
+                            <div class="about-card">
+                                <span class="about-icon">🎯</span>
+                                <div>
+                                    <strong>Goal-Oriented Learning</strong>
+                                    <p class="text-muted mb-0 small">Every exercise is tied to measurable outcomes.</p>
+                                </div>
+                            </div>
+                            <div class="about-card">
+                                <span class="about-icon">📊</span>
+                                <div>
+                                    <strong>Progress Tracking</strong>
+                                    <p class="text-muted mb-0 small">Visual stats and streaks to keep you motivated.</p>
+                                </div>
+                            </div>
+                            <div class="about-card">
+                                <span class="about-icon">🌍</span>
+                                <div>
+                                    <strong>Real-World English</strong>
+                                    <p class="text-muted mb-0 small">Content based on authentic language use and context.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light" id="history-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">The Story Behind It</h2>
+                    <p class="text-muted mt-3">How a team project became a solo achievement</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="history-card">
+                            <div class="history-step">01</div>
+                            <h5 class="fw-bold mt-3">The Team Assignment</h5>
+                            <p class="text-muted mb-0">A group project was launched to build an interactive English learning platform. The scope was ambitious &mdash; adaptive content, quizzes, and a full grammar reference guide.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="history-card">
+                            <div class="history-step">02</div>
+                            <h5 class="fw-bold mt-3">Going Solo</h5>
+                            <p class="text-muted mb-0">Circumstances changed and the project shifted to a single contributor. Rather than scaling back, the full feature set was kept &mdash; a personal commitment to quality over convenience.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="history-card">
+                            <div class="history-step">03</div>
+                            <h5 class="fw-bold mt-3">Shipped &amp; Proud</h5>
+                            <p class="text-muted mb-0">The platform launched as originally scoped, built from scratch using Bootstrap and Webpack. This site is both the product and the proof of what one person can accomplish.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" id="skills-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">English Skills Covered</h2>
+                    <p class="text-muted mt-3">Six core areas of English, all in one platform</p>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="skill-card">
+                            <span class="skill-icon">📖</span>
+                            <h6 class="fw-bold">Grammar</h6>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                            <small class="text-muted">Tenses, conditionals, modal verbs</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="skill-card">
+                            <span class="skill-icon">💬</span>
+                            <h6 class="fw-bold">Vocabulary</h6>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                            <small class="text-muted">Topic-based word sets with context</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="skill-card">
+                            <span class="skill-icon">👁️</span>
+                            <h6 class="fw-bold">Reading</h6>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                            <small class="text-muted">Comprehension texts at every level</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="skill-card">
+                            <span class="skill-icon">✍️</span>
+                            <h6 class="fw-bold">Writing</h6>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+                            <small class="text-muted">Structured writing exercises</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="skill-card">
+                            <span class="skill-icon">👂</span>
+                            <h6 class="fw-bold">Listening</h6>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+                            <small class="text-muted">Audio tracks with comprehension tasks</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="skill-card">
+                            <span class="skill-icon">🗣️</span>
+                            <h6 class="fw-bold">Speaking</h6>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div>
+                            <small class="text-muted">Pronunciation and fluency drills</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light" id="timeline-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Development Timeline</h2>
+                    <p class="text-muted mt-3">From first idea to finished product</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Month 1</span>
+                            <h6 class="fw-bold">Research &amp; Planning</h6>
+                            <p class="text-muted mb-0">Defined the feature set, chose the tech stack (Bootstrap + Webpack), and mapped out the full user flow.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Month 2</span>
+                            <h6 class="fw-bold">Core Build</h6>
+                            <p class="text-muted mb-0">Built the hero, navigation, adaptive features section, and grammar guide. Established the complete visual design system.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Month 3</span>
+                            <h6 class="fw-bold">Polish &amp; Launch</h6>
+                            <p class="text-muted mb-0">Refined responsiveness, added interactions, completed all content sections, and shipped the final version.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" id="gallery-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Platform Gallery</h2>
+                    <p class="text-muted mt-3">A look inside the learning experience</p>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="gallery-card">
+                            <div class="gallery-thumb bg-primary bg-opacity-10"><span>📝</span></div>
+                            <p class="gallery-label">Grammar Tables</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="gallery-card">
+                            <div class="gallery-thumb bg-success bg-opacity-10"><span>🧩</span></div>
+                            <p class="gallery-label">Interactive Quizzes</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="gallery-card">
+                            <div class="gallery-thumb bg-warning bg-opacity-10"><span>📊</span></div>
+                            <p class="gallery-label">Progress Dashboard</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="gallery-card">
+                            <div class="gallery-thumb bg-info bg-opacity-10"><span>🎧</span></div>
+                            <p class="gallery-label">Listening Exercises</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="gallery-card">
+                            <div class="gallery-thumb bg-danger bg-opacity-10"><span>✍️</span></div>
+                            <p class="gallery-label">Writing Challenges</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="gallery-card">
+                            <div class="gallery-thumb bg-secondary bg-opacity-10"><span>📚</span></div>
+                            <p class="gallery-label">Word Libraries</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="container text-center">
+                <p class="mb-1">Built solo with <span class="text-primary fw-semibold">Bootstrap</span> + <span class="text-success fw-semibold">Webpack</span></p>
+                <p class="footer-copy mb-0">English InterAdaptive WebSite &copy; 2025</p>
+            </div>
+        </footer>
     </body>
 </html>
