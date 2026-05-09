@@ -7,22 +7,25 @@
         <title>English InterAdaptive WebSite</title>
     </head>
     <body>
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
             <div class="container">
-                <a class="navbar-brand" href="#hero-section">
-                    🏛️ EnglishSite
-                </a>
-                <div class="nav-links">
-                    <a href="#about-section">About</a>
-                    <a href="#history-section">History</a>
-                    <a href="#skills-section">Skills</a>
-                    <a href="#timeline-section">Timeline</a>
-                    <a href="#gallery-section">Gallery</a>
+                <a class="navbar-brand" href="#hero-section"><!--🏛️--> EnglishSite</a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto gap-lg-1">
+                        <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#history-section">History</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills-section">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#timeline-section">Timeline</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery-section">Gallery</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
 
-        <section class="hero" id="hero-section">
+         <section class="hero" id="hero-section">
             <div class="container">
                 <h1>
                     My First
@@ -31,7 +34,7 @@
                 <p>
                     An adaptive English learning platform built almost entirely by one developer — proof that a single person, with enough drive, can deliver a full team's vision.
                 </p>
-                <a id="starts" class="btn btn-primary btn-sm">
+                <a id="starts" class="btn btn-primary btn-lg px-4">
                     Explore the Project ➞
                 </a>
             </div>
@@ -40,29 +43,35 @@
         <section class="py-5 bg-light" id="features">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="section-title">Why Choose Us?</h2>
-                    <p class="text-muted mt-3">Everything you need to learn English effectively</p>
+                    <h2 class="section-title">Why I Chose This</h2>
+                    <p class="text-muted mt-3">The core capabilities behind the platform</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-md-4">
-                        <div class="card feature-card p-4">
-                            <div class="feature-icon bg-primary bg-opacity-10">&#129504;</div>
-                            <h5 class="fw-bold">Adaptive Learning</h5>
-                            <p class="text-muted mb-0">The system adjusts difficulty based on your progress and automatically tracks your weak spots.</p>
+                        <div class="card feature-card h-100 border-0">
+                            <div class="card-body p-4">
+                                <div class="feature-icon bg-primary bg-opacity-10 mb-3">&#129504;</div>
+                                <h5 class="card-title fw-bold">Adaptive Learning</h5>
+                                <p class="card-text text-muted mb-0">The system adjusts difficulty based on your progress and automatically tracks your weak spots.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card feature-card p-4">
-                            <div class="feature-icon bg-success bg-opacity-10">&#9997;&#65039;</div>
-                            <h5 class="fw-bold">Interactive Quizzes</h5>
-                            <p class="text-muted mb-0">Test your knowledge with multiple-choice and fill-in-the-blank questions with instant feedback.</p>
+                        <div class="card feature-card h-100 border-0">
+                            <div class="card-body p-4">
+                                <div class="feature-icon bg-success bg-opacity-10 mb-3">&#9997;&#65039;</div>
+                                <h5 class="card-title fw-bold">Interactive Quizzes</h5>
+                                <p class="card-text text-muted mb-0">Test your knowledge with multiple-choice and fill-in-the-blank questions with instant feedback.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card feature-card p-4">
-                            <div class="feature-icon bg-warning bg-opacity-10">&#128218;</div>
-                            <h5 class="fw-bold">Grammar Guide</h5>
-                            <p class="text-muted mb-0">Clear, structured tables with examples &mdash; from Present Simple to Conditionals and Modal Verbs.</p>
+                        <div class="card feature-card h-100 border-0">
+                            <div class="card-body p-4">
+                                <div class="feature-icon bg-warning bg-opacity-10 mb-3">&#128218;</div>
+                                <h5 class="card-title fw-bold">Grammar Guide</h5>
+                                <p class="card-text text-muted mb-0">Clear, structured tables with examples &mdash; from Present Simple to Conditionals and Modal Verbs.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -80,18 +89,24 @@
                         <p class="text-muted">
                             The project began as a team assignment but evolved into a solo endeavor &mdash; a challenge that ultimately shaped every architectural decision and design choice found throughout the site.
                         </p>
-                        <div class="d-flex gap-4 mt-4">
-                            <div class="text-center">
-                                <div class="stat-number">1</div>
-                                <div class="text-muted small">Developer</div>
+                        <div class="row g-3 mt-1">
+                            <div class="col-4">
+                                <div class="card border-0 bg-primary bg-opacity-10 text-center py-3 rounded-3">
+                                    <div class="stat-number text-primary">1</div>
+                                    <small class="text-muted fw-semibold">Developer</small>
+                                </div>
                             </div>
-                            <div class="text-center">
-                                <div class="stat-number">3+</div>
-                                <div class="text-muted small">Months</div>
+                            <div class="col-4">
+                                <div class="card border-0 bg-success bg-opacity-10 text-center py-3 rounded-3">
+                                    <div class="stat-number text-success">3+</div>
+                                    <small class="text-muted fw-semibold">Months</small>
+                                </div>
                             </div>
-                            <div class="text-center">
-                                <div class="stat-number">6</div>
-                                <div class="text-muted small">Skill Areas</div>
+                            <div class="col-4">
+                                <div class="card border-0 bg-warning bg-opacity-10 text-center py-3 rounded-3">
+                                    <div class="stat-number text-warning">6</div>
+                                    <small class="text-muted fw-semibold">Skill Areas</small>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -132,24 +147,30 @@
                 </div>
                 <div class="row g-4">
                     <div class="col-md-4">
-                        <div class="history-card">
-                            <div class="history-step">01</div>
-                            <h5 class="fw-bold mt-3">The Team Assignment</h5>
-                            <p class="text-muted mb-0">A group project was launched to build an interactive English learning platform. The scope was ambitious &mdash; adaptive content, quizzes, and a full grammar reference guide.</p>
+                        <div class="card history-card h-100 border-0">
+                            <div class="card-body p-4">
+                                <div class="history-step">01</div>
+                                <h5 class="card-title fw-bold mt-3">The Team Assignment</h5>
+                                <p class="card-text text-muted mb-0">A group project was launched to build an interactive English learning platform. The scope was ambitious &mdash; adaptive content, quizzes, and a full grammar reference guide.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="history-card">
-                            <div class="history-step">02</div>
-                            <h5 class="fw-bold mt-3">Going Solo</h5>
-                            <p class="text-muted mb-0">Circumstances changed and the project shifted to a single contributor. Rather than scaling back, the full feature set was kept &mdash; a personal commitment to quality over convenience.</p>
+                        <div class="card history-card h-100 border-0">
+                            <div class="card-body p-4">
+                                <div class="history-step">02</div>
+                                <h5 class="card-title fw-bold mt-3">Going Solo</h5>
+                                <p class="card-text text-muted mb-0">Circumstances changed and the project shifted to a single contributor. Rather than scaling back, the full feature set was kept &mdash; a personal commitment to quality over convenience.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="history-card">
-                            <div class="history-step">03</div>
-                            <h5 class="fw-bold mt-3">Shipped &amp; Proud</h5>
-                            <p class="text-muted mb-0">The platform launched as originally scoped, built from scratch using Bootstrap and Webpack. This site is both the product and the proof of what one person can accomplish.</p>
+                        <div class="card history-card h-100 border-0">
+                            <div class="card-body p-4">
+                                <div class="history-step">03</div>
+                                <h5 class="card-title fw-bold mt-3">Shipped &amp; Proud</h5>
+                                <p class="card-text text-muted mb-0">The platform launched as originally scoped, built from scratch using Bootstrap and Webpack. This site is both the product and the proof of what one person can accomplish.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -163,52 +184,118 @@
                     <p class="text-muted mt-3">Six core areas of English, all in one platform</p>
                 </div>
                 <div class="row g-3">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="skill-card">
-                            <span class="skill-icon">📖</span>
-                            <h6 class="fw-bold">Grammar</h6>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
-                            <small class="text-muted">Tenses, conditionals, modal verbs</small>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card skill-card h-100 border-0">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center gap-3 mb-3">
+                                    <span class="skill-icon">📖</span>
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <h6 class="fw-bold mb-0">Grammar</h6>
+                                            <span class="badge bg-primary rounded-pill">90%</span>
+                                        </div>
+                                        <div class="progress rounded-pill" style="height: 7px;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar skill-bar-fill" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="text-muted">Tenses, conditionals, modal verbs</small>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="skill-card">
-                            <span class="skill-icon">💬</span>
-                            <h6 class="fw-bold">Vocabulary</h6>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
-                            <small class="text-muted">Topic-based word sets with context</small>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card skill-card h-100 border-0">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center gap-3 mb-3">
+                                    <span class="skill-icon">💬</span>
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <h6 class="fw-bold mb-0">Vocabulary</h6>
+                                            <span class="badge bg-primary rounded-pill">85%</span>
+                                        </div>
+                                        <div class="progress rounded-pill" style="height: 7px;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar skill-bar-fill" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="text-muted">Topic-based word sets with context</small>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="skill-card">
-                            <span class="skill-icon">👁️</span>
-                            <h6 class="fw-bold">Reading</h6>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
-                            <small class="text-muted">Comprehension texts at every level</small>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card skill-card h-100 border-0">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center gap-3 mb-3">
+                                    <span class="skill-icon">👁️</span>
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <h6 class="fw-bold mb-0">Reading</h6>
+                                            <span class="badge bg-primary rounded-pill">80%</span>
+                                        </div>
+                                        <div class="progress rounded-pill" style="height: 7px;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar skill-bar-fill" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="text-muted">Comprehension texts at every level</small>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="skill-card">
-                            <span class="skill-icon">✍️</span>
-                            <h6 class="fw-bold">Writing</h6>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
-                            <small class="text-muted">Structured writing exercises</small>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card skill-card h-100 border-0">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center gap-3 mb-3">
+                                    <span class="skill-icon">✍️</span>
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <h6 class="fw-bold mb-0">Writing</h6>
+                                            <span class="badge bg-primary rounded-pill">75%</span>
+                                        </div>
+                                        <div class="progress rounded-pill" style="height: 7px;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar skill-bar-fill" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="text-muted">Structured writing exercises</small>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="skill-card">
-                            <span class="skill-icon">👂</span>
-                            <h6 class="fw-bold">Listening</h6>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
-                            <small class="text-muted">Audio tracks with comprehension tasks</small>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card skill-card h-100 border-0">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center gap-3 mb-3">
+                                    <span class="skill-icon">👂</span>
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <h6 class="fw-bold mb-0">Listening</h6>
+                                            <span class="badge bg-primary rounded-pill">70%</span>
+                                        </div>
+                                        <div class="progress rounded-pill" style="height: 7px;" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar skill-bar-fill" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="text-muted">Audio tracks with comprehension tasks</small>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="skill-card">
-                            <span class="skill-icon">🗣️</span>
-                            <h6 class="fw-bold">Speaking</h6>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div>
-                            <small class="text-muted">Pronunciation and fluency drills</small>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card skill-card h-100 border-0">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center gap-3 mb-3">
+                                    <span class="skill-icon">🗣️</span>
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <h6 class="fw-bold mb-0">Speaking</h6>
+                                            <span class="badge bg-primary rounded-pill">65%</span>
+                                        </div>
+                                        <div class="progress rounded-pill" style="height: 7px;" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar skill-bar-fill" style="width: 65%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="text-muted">Pronunciation and fluency drills</small>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -225,7 +312,7 @@
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <span class="timeline-date">Month 1</span>
+                            <span class="badge bg-primary rounded-pill mb-2">Month 1</span>
                             <h6 class="fw-bold">Research &amp; Planning</h6>
                             <p class="text-muted mb-0">Defined the feature set, chose the tech stack (Bootstrap + Webpack), and mapped out the full user flow.</p>
                         </div>
@@ -233,7 +320,7 @@
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <span class="timeline-date">Month 2</span>
+                            <span class="badge bg-primary rounded-pill mb-2">Month 2</span>
                             <h6 class="fw-bold">Core Build</h6>
                             <p class="text-muted mb-0">Built the hero, navigation, adaptive features section, and grammar guide. Established the complete visual design system.</p>
                         </div>
@@ -241,7 +328,7 @@
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <span class="timeline-date">Month 3</span>
+                            <span class="badge bg-success rounded-pill mb-2">Month 3</span>
                             <h6 class="fw-bold">Polish &amp; Launch</h6>
                             <p class="text-muted mb-0">Refined responsiveness, added interactions, completed all content sections, and shipped the final version.</p>
                         </div>
@@ -253,44 +340,44 @@
         <section class="py-5" id="gallery-section">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="section-title">Platform Gallery</h2>
-                    <p class="text-muted mt-3">A look inside the learning experience</p>
+                    <h2 class="section-title">The Build in Three Stages</h2>
+                    <p class="text-muted mt-3">From rough prototype to final submission — three builds across the development cycle</p>
                 </div>
-                <div class="row g-3">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="gallery-card">
-                            <div class="gallery-thumb bg-primary bg-opacity-10"><span>📝</span></div>
-                            <p class="gallery-label">Grammar Tables</p>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card stage-card h-100 border-0">
+                            <div class="stage-header">
+                                <span class="badge bg-secondary-subtle text-secondary-emphasis">1st Stage</span>
+                                <span class="stage-label">Training Version</span>
+                            </div>
+                            <img src="public/TestSite.jpg" alt="Training Version" class="card-img-top stage-img" />
+                            <div class="card-body">
+                                <p class="card-text text-muted mb-0">First structural prototype — raw layout, no polish. Built to validate the content structure and overall page flow before committing to a visual direction.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="gallery-card">
-                            <div class="gallery-thumb bg-success bg-opacity-10"><span>🧩</span></div>
-                            <p class="gallery-label">Interactive Quizzes</p>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card stage-card h-100 border-0">
+                            <div class="stage-header">
+                                <span class="badge bg-primary-subtle text-primary-emphasis">2nd Stage</span>
+                                <span class="stage-label">Development Version</span>
+                            </div>
+                            <img src="public/MaketSite.jpg" alt="Development Version" class="card-img-top stage-img" />
+                            <div class="card-body">
+                                <p class="card-text text-muted mb-0">Intermediate build — design system taking shape. Key interactions tested, typography refined, and the visual identity of the project established.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="gallery-card">
-                            <div class="gallery-thumb bg-warning bg-opacity-10"><span>📊</span></div>
-                            <p class="gallery-label">Progress Dashboard</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="gallery-card">
-                            <div class="gallery-thumb bg-info bg-opacity-10"><span>🎧</span></div>
-                            <p class="gallery-label">Listening Exercises</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="gallery-card">
-                            <div class="gallery-thumb bg-danger bg-opacity-10"><span>✍️</span></div>
-                            <p class="gallery-label">Writing Challenges</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="gallery-card">
-                            <div class="gallery-thumb bg-secondary bg-opacity-10"><span>📚</span></div>
-                            <p class="gallery-label">Word Libraries</p>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card stage-card stage-card--final h-100">
+                            <div class="stage-header">
+                                <span class="badge bg-success-subtle text-success-emphasis">3rd Stage ✓</span>
+                                <span class="stage-label">Final Version</span>
+                            </div>
+                            <img src="public/OriginSite.jpg" alt="Final Version" class="card-img-top stage-img" />
+                            <div class="card-body">
+                                <p class="card-text text-muted mb-0">The version delivered as the official project submission — fully polished, responsive, content-complete, and built entirely solo from first commit to final review.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -299,8 +386,13 @@
 
         <footer class="site-footer">
             <div class="container text-center">
-                <p class="mb-1">Built solo with <span class="text-primary fw-semibold">Bootstrap</span> + <span class="text-success fw-semibold">Webpack</span></p>
-                <p class="footer-copy mb-0">English InterAdaptive WebSite &copy; 2025</p>
+                <p class="mb-2">
+                    Built solo with
+                    <span class="text-success fw-semibold">WebPack</span> +
+                    <span class="text-primary fw-semibold">Bootstrap</span> +
+                    <span class="text-info fw-semibold">CSS3</span>
+                </p>
+                <p class="footer-copy mb-0">English InterAdaptive WebSite &copy; 2026</p>
             </div>
         </footer>
     </body>
