@@ -26,6 +26,7 @@ body {
 #mainNavbar {
     background: linear-gradient(135deg, #1a1f36 0%, #1e2746 100%) !important;
     padding: 1.1rem 0;
+    opacity: 0.95;
     border-bottom: 2px solid rgba(26, 115, 232, 0.3);
 }
 
@@ -193,6 +194,20 @@ body {
     margin-left: 0;
 }
 
+.Gran{
+    background: linear-gradient(135deg, #1a1f36 0%, #1e2746 100%);
+    height: 8px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: space-between;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100vw;
+    z-index: 99
+}
+
 /* ===== Feature Cards ===== */
 .feature-card {
     border-radius: 14px !important;
@@ -203,6 +218,18 @@ body {
 .feature-card:hover {
     transform: translateY(-6px);
     box-shadow: var(--card-hover-shadow) !important;
+}
+
+#feacard1:hover {
+    box-shadow: 0 8px 32px rgba(13, 110, 253, 0.35) !important;
+}
+
+#feacard2:hover {
+    box-shadow: 0 8px 32px rgba(25, 135, 84, 0.35) !important;
+}
+
+#feacard3:hover {
+    box-shadow: 0 8px 32px rgba(255, 193, 7, 0.45) !important;
 }
 
 .feature-icon {
