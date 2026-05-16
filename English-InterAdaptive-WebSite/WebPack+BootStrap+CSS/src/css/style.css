@@ -21,7 +21,6 @@ body {
     --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     --card-hover-shadow: 0 8px 32px rgba(26, 115, 232, 0.18);
 }
-
 /* ===== Navbar ===== */
 #mainNavbar {
     background: linear-gradient(135deg, #1a1f36 0%, #1e2746 100%) !important;
@@ -32,12 +31,15 @@ body {
 
 .navbar-brand {
     font-size: 1.35rem;
+    letter-spacing: 0.01em;
+    line-height: 1.15;
     font-weight: 700;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .navbar-brand:hover {
     opacity: 0.85;
+    transition: all 0.3s ease;
 }
 
 .navbar-nav .nav-link {
@@ -68,7 +70,6 @@ body {
 .navbar-nav .nav-link:hover::after {
     width: calc(100% - 1.6rem);
 }
-
 /* ===== Hero ===== */
 .hero {
     background: linear-gradient(135deg, #020818 0%, #0b1a52 50%, #071040 100%);
@@ -171,13 +172,13 @@ body {
         transform: translateX(0);
     }
 }
-
 /* ===== Section Title ===== */
 .section-title {
     font-size: 2rem;
     font-weight: 700;
+    text-align: center;
     position: relative;
-    margin-bottom: .5rem;
+    margin-bottom: 2rem;
 }
 
 .section-title::after {
@@ -194,7 +195,7 @@ body {
     margin-left: 0;
 }
 
-.Gran{
+.Gran {
     background: linear-gradient(135deg, #1a1f36 0%, #1e2746 100%);
     height: 8px;
     display: flex;
