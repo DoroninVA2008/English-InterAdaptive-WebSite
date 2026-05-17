@@ -5,3 +5,7 @@ import '../css/style.css'
 document.getElementById("starts").addEventListener("click", function() {
     document.getElementById("about").scrollIntoView({ behavior: "smooth" });
 });
+
+document.getElementById("About").addEventListener("click", function() {
+    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+});
