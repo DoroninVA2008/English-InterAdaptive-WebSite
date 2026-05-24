@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/gif" href="public/CITLogo.gif" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
         <title>English InterAdaptive WebSite</title>
     </head>
     <body>
@@ -137,43 +138,122 @@
                 </div>
             </div>
         </section>
-        <section class="py-5 bg-light" id="history-section">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="section-title">The Story Behind It</h2>
-                    <p class="text-muted mt-3">How a team project became a solo achievement</p>
+        <section class="py-5 bg-light" id="unified-story-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">The Story Behind It</h2>
+      <p class="text-muted mt-3">How a team project became a solo achievement</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <!-- Общий контейнер для объединённой timeline-истории -->
+        <div class="unified-timeline">
+          
+          <!-- Карточка 1 + Timeline пункт 1 -->
+          <div class="unified-item">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-5">
+                <div class="card border-0 shadow text-center history-card mx-2">
+                  <div class="card-body p-4">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm" style="width: 70px; height: 70px; font-size: 1.8rem;">
+                      <i class="bi bi-people-fill"></i>
+                    </div>
+                    <h5 class="fw-bold mt-2 mb-3">The Team Assignment</h5>
+                    <p class="text-muted mb-0" style="line-height: 1.5;">A group project to build an interactive English learning platform with adaptive content and full grammar reference.</p>
+                  </div>
                 </div>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="card history-card h-100 border-0">
-                            <div class="card-body p-4">
-                                <div class="history-step">01</div>
-                                <h5 class="card-title fw-bold mt-3">The Team Assignment</h5>
-                                <p class="card-text text-muted mb-0">A group project was launched to build an interactive English learning platform. The scope was ambitious &mdash; adaptive content, quizzes, and a full grammar reference guide.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card history-card h-100 border-0">
-                            <div class="card-body p-4">
-                                <div class="history-step">02</div>
-                                <h5 class="card-title fw-bold mt-3">Going Solo</h5>
-                                <p class="card-text text-muted mb-0">Circumstances changed and the project shifted to a single contributor. Rather than scaling back, the full feature set was kept &mdash; a personal commitment to quality over convenience.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card history-card h-100 border-0">
-                            <div class="card-body p-4">
-                                <div class="history-step">03</div>
-                                <h5 class="card-title fw-bold mt-3">Shipped &amp; Proud</h5>
-                                <p class="card-text text-muted mb-0">The platform launched as originally scoped, built from scratch using Bootstrap and Webpack. This site is both the product and the proof of what one person can accomplish.</p>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-md-2 text-center position-relative">
+                <div class="timeline-connector">
+                  <div class="timeline-dot d-none d-md-flex"></div>
+                  <i class="bi bi-arrow-down-short d-md-none fs-1 text-primary my-2"></i>
+                  <i class="bi bi-arrow-right-short d-none d-md-block fs-1 text-primary"></i>
                 </div>
+              </div>
+              <div class="col-md-5">
+                <div class="timeline-content-wrapper">
+                  <div class="timeline-content">
+                    <span class="badge bg-primary rounded-pill mb-2">Month 1</span>
+                    <h6 class="fw-bold">Research &amp; Planning</h6>
+                    <p class="text-muted mb-0">Defined the feature set, chose the tech stack (Bootstrap + Webpack), and mapped out the full user flow.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+
+          <!-- Карточка 2 + Timeline пункт 2 -->
+          <div class="unified-item">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-5">
+                <div class="card border-0 shadow text-center history-card mx-2">
+                  <div class="card-body p-4">
+                    <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm" style="width: 70px; height: 70px; font-size: 1.8rem;">
+                      <i class="bi bi-person-walking"></i>
+                    </div>
+                    <h5 class="fw-bold mt-2 mb-3">Going Solo</h5>
+                    <p class="text-muted mb-0" style="line-height: 1.5;">Circumstances changed, project shifted to one contributor. Full feature set kept — quality over convenience.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 text-center position-relative order-md-1">
+                <div class="timeline-connector">
+                  <div class="timeline-dot d-none shadow-glow-warning d-md-flex"></div>
+                  <i class="bi bi-arrow-down-short d-md-none fs-1 text-warning my-2"></i>
+                  <i class="bi bi-arrow-right-short d-none d-md-block fs-1 text-warning"></i>
+                </div>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <div class="timeline-content-wrapper">
+                  <div class="timeline-content">
+                    <span class="badge bg-warning rounded-pill mb-2">Month 2</span>
+                    <h6 class="fw-bold">Core Build</h6>
+                    <p class="text-muted mb-0">Built the hero, navigation, adaptive features section, and grammar guide. Established the complete visual design system.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Карточка 3 + Timeline пункт 3 -->
+          <div class="unified-item">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-5">
+                <div class="card border-0 shadow text-center history-card mx-2">
+                  <div class="card-body p-4">
+                    <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm" style="width: 70px; height: 70px; font-size: 1.8rem;">
+                      <i class="bi bi-rocket-takeoff-fill"></i>
+                    </div>
+                    <h5 class="fw-bold mt-2 mb-3">Shipped & Proud</h5>
+                    <p class="text-muted mb-0" style="line-height: 1.5;">Launched as scoped, built with Bootstrap & Webpack. Proof of what one person can accomplish.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 text-center position-relative">
+                <div class="timeline-connector">
+                  <div class="timeline-dot d-none shadow-glow-success d-md-flex"></div>
+                  <i class="bi bi-arrow-down-short d-md-none fs-1 text-success my-2"></i>
+                  <i class="bi bi-arrow-right-short d-none d-md-block fs-1 text-success"></i>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="timeline-content-wrapper">
+                  <div class="timeline-content">
+                    <span class="badge bg-success rounded-pill mb-2">Month 3</span>
+                    <h6 class="fw-bold">Polish &amp; Launch</h6>
+                    <p class="text-muted mb-0">Refined responsiveness, added interactions, completed all content sections, and shipped the final version.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         <section class="py-5" id="skills-section">
             <div class="container">

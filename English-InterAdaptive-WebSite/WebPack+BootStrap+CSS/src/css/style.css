@@ -277,23 +277,108 @@ body {
 }
 
 /* ===== History Section ===== */
+/* Unified Timeline & Cards */
+.unified-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.unified-item:last-child {
+  margin-bottom: 0;
+}
+
 .history-card {
-    border-radius: 14px !important;
-    box-shadow: var(--card-shadow) !important;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .history-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--card-hover-shadow) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1) !important;
 }
 
-.history-step {
-    font-size: 3.5rem;
-    font-weight: 800;
-    color: var(--primary);
-    opacity: 0.18;
-    line-height: 1;
+.timeline-connector {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #0d6efd;
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+/* Вертикальная соединительная линия между рядами на десктопе */
+@media (min-width: 768px) {
+  .unified-timeline {
+    position: relative;
+  }
+  
+  .unified-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #0d6efd 0%, #ffc107 50%, #20c997 100%);
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+  
+  .unified-item:hover .timeline-dot {
+    transform: scale(1.3);
+  }
+}
+
+.timeline-content-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.timeline-content {
+  background: white;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.timeline-content:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 767px) {
+  .unified-item {
+    margin-bottom: 2.5rem;
+  }
+  
+  .history-card {
+    margin-bottom: 1rem !important;
+  }
+  
+  .timeline-content {
+    margin-top: 0.5rem;
+  }
+}
+
+.shadow-glow-warning {
+  box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.35) !important;
+  background: rgba(255, 193, 7) !important;
+}
+
+.shadow-glow-success {
+  box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.35) !important;
+  background: rgba(25, 135, 84) !important;
 }
 
 /* ===== Skills Section ===== */
@@ -346,7 +431,7 @@ body {
 .timeline-dot {
     position: absolute;
     left: -2.1rem;
-    top: 6px;
+    top: 24px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
